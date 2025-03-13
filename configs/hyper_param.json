@@ -1,0 +1,11 @@
+{
+    "initial_lr": 1e-5,
+    "warmup_lr": 1e-4,
+    "batch_size": 32,
+    "num_workers": 4,
+    "num_classes": 3,
+    "resize": 224,
+    "epochs": 20,
+    "gamma": 0.95,
+    "warm_up_ratio": 0.1
+}
