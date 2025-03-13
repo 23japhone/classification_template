@@ -93,7 +93,7 @@
     ```
 
 ## 使用方法
-项目主要包含`train.py` 和 `test.py` 两个脚本，下面是一些常见用法示例。
+项目主要包含`train.py`、`test.py`和`predict.py`三个脚本，下面是一些常见用法示例。
 
 1. 训练脚本`train.py`:
 - 若不使用GPU或者只使用一个GPU，请注释掉`os.environ["CUDA_VISIBLE_DEVICES"]`
