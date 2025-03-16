@@ -55,6 +55,9 @@ for model in "${models[@]}"; do
         if [ $test_status -ne 0 ]; then
             echo "测试模型 $model 失败，程序结束。"
             exit 1
+        else
+            echo "测试完成，开始预测模型：$model"
+            python predict.py --model "$model" --gpu_id "$gpu_id" --img_path "./predict_datasets" --weight_path "./log/$model/best.pth"
         fi
 
     else
