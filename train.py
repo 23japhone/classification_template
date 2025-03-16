@@ -447,6 +447,7 @@ class TrainModel(object):
         # 执行时间
         exec_time = t2 - t1
         print(f"{self.opt.model}模型训练总用时: {exec_time: .2f} s")
+        self.meta["exec_time"] = exec_time
 
         print(f"模型训练完毕，best valid acc: {best_valid_acc: .4f}")
 
@@ -505,6 +506,8 @@ def main() -> None:
             valid_metrics[new_key] = value
         elif key == "lr":
             lr_metrics["learning rate"] = value
+        else:
+            pass
 
     # 训练指标图路径
     train_metrics_path = os.path.join(opt.log_dir, opt.model, "train_metrics.png")
