@@ -182,3 +182,5 @@ log/
 pred_result/
 
 pretrained_weights/
+
+predict_datasets/
